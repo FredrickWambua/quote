@@ -1,17 +1,17 @@
 <div>
     <form #form = 'ngForm' (ngSubmit)='submit(form.value)'>
-        <div>
+        <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" ngModel>
+            <input type="text" class="form-control" name="name" id="name" ngModel>
         </div>
-        <div>
+        <div class="form-group">
             <label for="author">Author</label>
-            <input type="text" name="author" id="author" ngModel>
+            <input type="text" class="form-control" name="author" id="author" ngModel>
         </div>
-        <div>
+        <div class="formg-group">
             <label for="quotemsg">Enter Quote</label>
-            <textarea name="quotemsg" id="quotemsg" cols="30" rows="10" ngModel></textarea>
+            <textarea name="quotemsg" class="form-control" id="quotemsg" cols="30" rows="10" ngModel></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-sm btn-success">Submit</button>
     </form>
 </div>
