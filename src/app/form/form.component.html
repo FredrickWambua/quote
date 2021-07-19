@@ -1,0 +1,17 @@
+<div>
+    <form #form = 'ngForm' (ngSubmit)='submit(form.value)'>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" ngModel>
+        </div>
+        <div>
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" ngModel>
+        </div>
+        <div>
+            <label for="quotemsg">Enter Quote</label>
+            <textarea name="quotemsg" id="quotemsg" cols="30" rows="10" ngModel></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
