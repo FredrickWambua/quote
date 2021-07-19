@@ -1,0 +1,6 @@
+<div *ngFor= 'let creator of quoteCreator'>
+    <p>Quote: {{creator.quotemsg}} </p>
+    
+</div>
+<app-form (onsubmit) = 'submitQuote($event)'></app-form>
+
