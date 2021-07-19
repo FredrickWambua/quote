@@ -3,11 +3,24 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <div *ngFor= 'let creator of quoteCreator'>
-                <p>{{creator.quotemsg}} </p>
-                
-            </div>
+            <p>To Display your favorite quote, fill this form</p>           
             <app-form (onsubmit) = 'submitQuote($event)'></app-form>
+        </div>
+        <div class="col-md-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div *ngFor= 'let creator of quoteCreator'>
+                            <p>{{creator.quotemsg}} </p>                         
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div *ngFor= 'let creator of quoteCreator'>
+                            <p>{{creator.quotemsg}} </p>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
