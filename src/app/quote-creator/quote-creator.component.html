@@ -9,12 +9,14 @@
         <div class="col-md-8">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div *ngFor= 'let creator of quoteCreator'>
-                            <p>{{creator.quotemsg}} </p>                         
+                            <p>{{creator.quotemsg}} </p>
+                            <p>-{{creator.author }} </p> 
+                            <app-quote-detail></app-quote-detail>                   
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div *ngFor= 'let creator of quoteCreator'>
                             <p>{{creator.quotemsg}} </p>                           
                         </div>
