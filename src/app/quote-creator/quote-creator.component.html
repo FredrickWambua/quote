@@ -1,31 +1,19 @@
-<h1>Welcome to InspireMe</h1>
-<hr>
+<h1 id="header">Welcome to InspireMe</h1>
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
-            <p>To Display your favorite quote, fill this form</p>           
+        <div class="col-md-6">
+            <p id="formheader">To Display your favorite quote, fill this form</p>           
             <app-form (onsubmit) = 'submitQuote($event)'></app-form>
         </div>
-        <div class="col-md-8">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div *ngFor= 'let creator of quoteCreator let i= index'>
-                            <p>{{creator.quotemsg}} </p>
-                            <p>-{{creator.author }} </p> 
-                            <app-quote-detail (isRead)= 'quoteDelete(i)'></app-quote-detail>                   
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div *ngFor= 'let creator of quoteCreator let i =index'>
-                            <p>{{creator.quotemsg}} </p>                           
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-6 quotesection">
+            <div *ngFor= 'let creator of quoteCreator let i= index' class="quotecontent">
+                <p>{{creator.quotemsg}} </p>
+                <p>-{{creator.author }} </p>
+                <p id="author">Posted by: {{creator.name}} <span id="time">On: 20,7,2021</span></p> 
+                <app-quote-detail id="details" (isRead)= 'quoteDelete(i)'></app-quote-detail>                   
             </div>
         </div>
     </div>
-
 </div>
 
 
