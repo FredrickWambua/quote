@@ -10,14 +10,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div *ngFor= 'let creator of quoteCreator'>
+                        <div *ngFor= 'let creator of quoteCreator let i= index'>
                             <p>{{creator.quotemsg}} </p>
                             <p>-{{creator.author }} </p> 
-                            <app-quote-detail></app-quote-detail>                   
+                            <app-quote-detail (isRead)= 'quoteDelete(i)'></app-quote-detail>                   
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div *ngFor= 'let creator of quoteCreator'>
+                        <div *ngFor= 'let creator of quoteCreator let i =index'>
                             <p>{{creator.quotemsg}} </p>                           
                         </div>
                     </div>

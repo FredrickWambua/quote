@@ -18,5 +18,7 @@ export class QuoteCreatorComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  quoteDelete(index){
+    this.quoteCreator.splice(index,1)
+  }
 }
