@@ -1,8 +1,22 @@
-
 .container-fluid{
-  background-color: rgba(0, 0, 0, 0.374);
+  background-color:teal;
   border-radius: 4px;
   padding-bottom: 5%;
   box-shadow: 2px 2px 3px 2px black;
   margin-bottom: 5%;
+}
+.form-control{
+    color: white;
+    background: transparent;
+    font-weight: 570;
+}
+label{
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+button {
+    margin-top: 10px;
+    background-color: white;
+    color: teal;
 }
