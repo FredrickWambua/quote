@@ -8,11 +8,11 @@ import { Quote } from 'src/app/quote';
 })
 export class QuoteCreatorComponent implements OnInit {
   quoteCreator:Quote[] = [
-    new Quote('Fred', 'Mahatma', 'Be yourself; everyone else is already taken.', new Date(2021,7,19))
+    new Quote('Fred', 'Mahatma', 'Be yourself; everyone else is already taken.', new Date(2021,7,19), 0,0)
   ]
 
   submitQuote(val:any){
-    this.quoteCreator.push(new Quote(val.name, val.author, val.quotemsg, val.dateposted))
+    this.quoteCreator.push(new Quote(val.name, val.author, val.quotemsg, val.dateposted, val.like, val.dislike))
   }
   constructor() { }
 
