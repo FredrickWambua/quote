@@ -1,6 +1,6 @@
 <div>
     <p id="author">Posted by:Fred <span id="time">On: 2020,7,19</span></p>
-    <button class="btn btn-success" id="like">upvote</button>
-    <button class="btn btn-warning" id="dislike">downvote</button>
+    <p><button class="btn btn-success" id="like" (click)='like()'>upvote</button> {{upVote}} </p>
+    <p><button class="btn btn-warning" id="dislike" (click)= 'dislike()' >downvote</button> {{downVote}} </p>
     <button class="btn btn-danger" id="delete" (click) ='quoteDelete(true)'>Delete</button>
 </div> 
