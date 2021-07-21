@@ -1,0 +1,28 @@
+#header {
+    text-align: center;
+    color: white;
+    background-color: teal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+}
+#formheader {
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.container {
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.quotecontent{
+    margin-top: 10px;
+    padding: 3px;
+    font-family: sans-serif;
+    background-color:teal;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px 2px black;
+}
