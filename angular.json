@@ -104,7 +104,11 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "https://fredrickwambua.github.io/quote/",
+            "name": "Quotes",
+            "email": "fredrick.musyoki@student.moringaschool.com"
+          }
         }
       }
     }
