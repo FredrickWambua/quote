@@ -27,7 +27,7 @@ You are welcome to make any changes to this webpage by following this process:
 
 - HTML5
 - CSS
-- Tyoescript
+- Typescript
 - Bootstrap
 - Angular Framework
 
